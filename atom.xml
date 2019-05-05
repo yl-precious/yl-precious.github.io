@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>yl-precious</title>
+  
+  <subtitle>yl-precious</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://yl-precious.github.io/"/>
+  <updated>2019-04-30T05:43:24.071Z</updated>
+  <id>https://yl-precious.github.io/</id>
+  
+  <author>
+    <name>yl-precious</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://yl-precious.github.io/2019/04/30/hello-world/"/>
+    <id>https://yl-precious.github.io/2019/04/30/hello-world/</id>
+    <published>2019-04-30T05:43:24.071Z</published>
+    <updated>2019-04-30T05:43:24.071Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
