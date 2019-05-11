@@ -409,7 +409,7 @@ Create repository ">
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        303
+                        304
                     </div>
                     
 
@@ -478,10 +478,14 @@ Make sure to change tagname with your desired image repository tag.
 </li>
 <li><p>编写Dockfile， 在docker_test同目录下创建Dockfile文件，格式如下：</p>
 <pre class=" language-bash"><code class="language-bash">FROM python:3.6
-MAINTAINER name  <span class="token punctuation">(</span>email<span class="token punctuation">)</span>      <span class="token comment" spellcheck="true"># 维护者信息</span>
-ADD ./docker_test /code        <span class="token comment" spellcheck="true"># 代码添加到code文件夹</span>
-WORKDIR /code        <span class="token comment" spellcheck="true"># 设置code文件夹是工作目录</span>
-RUN pip <span class="token function">install</span> -r requirements.txt        <span class="token comment" spellcheck="true"># 安装支持</span>
+<span class="token comment" spellcheck="true"># 维护者信息</span>
+MAINTAINER name  <span class="token punctuation">(</span>email<span class="token punctuation">)</span> 
+<span class="token comment" spellcheck="true"># 代码添加到code文件夹</span>
+ADD ./docker_test /code    
+<span class="token comment" spellcheck="true"># 设置code文件夹是工作目录</span>
+WORKDIR /code        
+<span class="token comment" spellcheck="true"># 安装支持</span>
+RUN pip <span class="token function">install</span> -r requirements.txt        
 </code></pre>
 </li>
 <li><p>制作镜像</p>
@@ -493,11 +497,13 @@ RUN pip <span class="token function">install</span> -r requirements.txt        <
 <pre class=" language-bash"><code class="language-bash">docker run -d  imagename
 </code></pre>
 </li>
-</ol>
-<h3 id="删除docker-images中None的镜像"><a href="#删除docker-images中None的镜像" class="headerlink" title="删除docker images中None的镜像"></a>删除docker images中None的镜像</h3><pre class=" language-bash"><code class="language-bash">docker stop <span class="token punctuation">$(</span>docker <span class="token function">ps</span> -a <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">"Exited"</span> <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'{print <span class="token variable">$1</span> }'</span><span class="token punctuation">)</span> //停止容器
+<li><p>删除docker images中None的镜像</p>
+<pre class=" language-bash"><code class="language-bash">docker stop <span class="token punctuation">$(</span>docker <span class="token function">ps</span> -a <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">"Exited"</span> <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'{print <span class="token variable">$1</span> }'</span><span class="token punctuation">)</span> //停止容器
 docker <span class="token function">rm</span> <span class="token punctuation">$(</span>docker <span class="token function">ps</span> -a <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">"Exited"</span> <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'{print <span class="token variable">$1</span> }'</span><span class="token punctuation">)</span>  //删除容器 
 docker rmi <span class="token punctuation">$(</span>docker images <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">"none"</span> <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'{print <span class="token variable">$3</span>}'</span><span class="token punctuation">)</span>  //删除镜像
 </code></pre>
+</li>
+</ol>
 
             </div>
             <hr>
@@ -887,7 +893,7 @@ git add .
 
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-                <span class="white-color">712</span>
+                <span class="white-color">713</span>
             
 
             
