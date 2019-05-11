@@ -411,7 +411,7 @@ You may push a n">
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        254
+                        302
                     </div>
                     
 
@@ -494,6 +494,10 @@ docker build -t imagename Dockerfilepath
 </code></pre>
 </li>
 </ol>
+<h3 id="删除docker-images中None的镜像"><a href="#删除docker-images中None的镜像" class="headerlink" title="删除docker images中None的镜像"></a>删除docker images中None的镜像</h3><pre class=" language-bash"><code class="language-bash">docker stop <span class="token punctuation">$(</span>docker <span class="token function">ps</span> -a <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">"Exited"</span> <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'{print <span class="token variable">$1</span> }'</span><span class="token punctuation">)</span> //停止容器
+docker <span class="token function">rm</span> <span class="token punctuation">$(</span>docker <span class="token function">ps</span> -a <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">"Exited"</span> <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'{print <span class="token variable">$1</span> }'</span><span class="token punctuation">)</span>  //删除容器 
+docker rmi <span class="token punctuation">$(</span>docker images <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">"none"</span> <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'{print <span class="token variable">$3</span>}'</span><span class="token punctuation">)</span>  //删除镜像
+</code></pre>
 
             </div>
             <hr>
@@ -885,7 +889,7 @@ git add .
 
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-                <span class="white-color">663</span>
+                <span class="white-color">711</span>
             
 
             
