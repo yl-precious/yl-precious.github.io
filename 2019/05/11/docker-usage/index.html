@@ -475,7 +475,7 @@ docker images
 <pre class=" language-bash"><code class="language-bash">pip freeze <span class="token operator">></span> requirements.txt
 </code></pre>
 </li>
-<li><p>编写Dockfile， 在docker_test同目录下创建Dockfile文件，格式如下：<br><code>`</code><br>FROM python:3.6</p>
+<li><p>编写Dockfile， 在docker_test同目录下创建Dockfile文件，格式如下：<br><code>`</code> bash<br>FROM python:3.6</p>
 </li>
 </ol>
 <p>MAINTAINER name  (email)      # 维护者信息</p>
@@ -484,7 +484,7 @@ docker images
 <p>RUN pip install -r requirements.txt        # 安装支持</p>
 <pre><code>
 3. 制作镜像
-```bash
+``` bash
 docker build -t imagename Dockerfilepath 
 # Dockerfilepath：Dockerfile 所在文件夹名称，当前名录为 “.” 
 </code></pre><ol start="4">
