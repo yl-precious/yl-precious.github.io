@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>github Usage</title>
+      <link href="/2019/05/11/github-usage/"/>
+      <url>/2019/05/11/github-usage/</url>
+      
+        <content type="html"><![CDATA[<h2 id="github-上传本地文件"><a href="#github-上传本地文件" class="headerlink" title="github 上传本地文件"></a>github 上传本地文件</h2><ol><li><p>建立本地仓库 my_repo</p><pre class=" language-bash"><code class="language-bash"><span class="token function">mkdir</span> ~/my_repo</code></pre></li><li><p>初始化</p><pre class=" language-bash"><code class="language-bash"><span class="token function">cd</span> ~/my_repo <span class="token operator">&amp;&amp;</span> <span class="token function">git</span> init</code></pre></li><li><p>将所有文件添加到仓库</p><pre class=" language-bash"><code class="language-bash"><span class="token function">git</span> add <span class="token keyword">.</span></code></pre></li><li><p>关联github仓库</p><pre><code>到github text仓库复制仓库地址(https://github.com/yl-precious/yl-precious.github.io.git)</code></pre></li><li><p>执行</p><pre class=" language-bash"><code class="language-bash"><span class="token function">git</span> remote add origin https://github.com/yl-precious/yl-precious.github.io.git</code></pre></li><li><p>上传本地代码</p><pre class=" language-bash"><code class="language-bash"><span class="token function">git</span> push -u origin master</code></pre></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> github </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> github </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>typora_vue</title>
       <link href="/2019/05/11/typora-vue/"/>
       <url>/2019/05/11/typora-vue/</url>

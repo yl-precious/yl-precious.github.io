@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yl-precious.github.io/"/>
-  <updated>2019-05-11T06:44:35.651Z</updated>
+  <updated>2019-05-11T07:59:28.896Z</updated>
   <id>https://yl-precious.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>github Usage</title>
+    <link href="https://yl-precious.github.io/2019/05/11/github-usage/"/>
+    <id>https://yl-precious.github.io/2019/05/11/github-usage/</id>
+    <published>2019-05-11T07:46:59.000Z</published>
+    <updated>2019-05-11T07:59:28.896Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;github-上传本地文件&quot;&gt;&lt;a href=&quot;#github-上传本地文件&quot; class=&quot;headerlink&quot; title=&quot;github 上传本地文件&quot;&gt;&lt;/a&gt;github 上传本地文件&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;建立本地仓库
+        
+      
+    
+    </summary>
+    
+      <category term="github" scheme="https://yl-precious.github.io/categories/github/"/>
+    
+    
+      <category term="github" scheme="https://yl-precious.github.io/tags/github/"/>
+    
+  </entry>
   
   <entry>
     <title>typora_vue</title>
