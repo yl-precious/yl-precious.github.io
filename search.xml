@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>typora_vue</title>
+      <link href="/2019/05/11/typora-vue/"/>
+      <url>/2019/05/11/typora-vue/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Typora"><a href="#Typora" class="headerlink" title="Typora"></a>Typora</h2><p>Typora是一款支持实时预览的 Markdown 编辑器和阅读器，支持Windows、macOS、Linux三大平台。Typora 作为一款合格的 Markdown 编辑器，支持图片、列表、表格、代码、公式、目录等功能，同时这款软件还支持（一键）动态预览功能，让一切都变得如此干净、纯粹。并且有多种主题模板。</p><h3 id="Ubuntu-18-04-Typora-安装"><a href="#Ubuntu-18-04-Typora-安装" class="headerlink" title="Ubuntu 18.04 Typora 安装"></a>Ubuntu 18.04 Typora 安装</h3><pre class=" language-bash"><code class="language-bash">$ <span class="token function">wget</span> -qO - https://typora.io/linux/public-key.asc <span class="token operator">|</span> <span class="token function">sudo</span> apt-key add -<span class="token comment" spellcheck="true"># add Typora's repository</span><span class="token function">sudo</span> add-apt-repository <span class="token string">'deb https://typora.io/linux ./'</span><span class="token comment" spellcheck="true"># install typora</span><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> typora</code></pre><h3 id="Change-Typora-theme-to-V"><a href="#Change-Typora-theme-to-V" class="headerlink" title="Change Typora theme to V"></a>Change Typora theme to V</h3><ol><li>下载<a href="https://github.com/blinkfox/typora-vue-theme" target="_blank" rel="noopener">typora-vue-theme</a>中的vue.css、vue-dark.css文件和包含字体的vue文件夹；</li><li>打开 Typora，点击“偏好设置” =&gt; “打开主题文件夹”按钮，将弹出 Typora 的主题文件夹；</li><li>将下载好的vue.css和vue-dark.css文件和包含字体的vue文件夹放到 Typora 的主题文件夹中；</li><li>关闭并重新打开 Typora，从菜单栏中选择 “主题” =&gt; “Vue” 或者 “Vue Dark” 即可。</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Typora </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Typora </tag>
+            
+            <tag> Markdown </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2019/04/30/hello-world/"/>
       <url>/2019/04/30/hello-world/</url>

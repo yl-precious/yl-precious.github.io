@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yl-precious.github.io/"/>
-  <updated>2019-04-30T05:43:24.071Z</updated>
+  <updated>2019-05-11T06:39:14.095Z</updated>
   <id>https://yl-precious.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>typora_vue</title>
+    <link href="https://yl-precious.github.io/2019/05/11/typora-vue/"/>
+    <id>https://yl-precious.github.io/2019/05/11/typora-vue/</id>
+    <published>2019-05-11T06:07:26.000Z</published>
+    <updated>2019-05-11T06:39:14.095Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Typora&quot;&gt;&lt;a href=&quot;#Typora&quot; class=&quot;headerlink&quot; title=&quot;Typora&quot;&gt;&lt;/a&gt;Typora&lt;/h2&gt;&lt;p&gt;Typora是一款支持实时预览的 Markdown
+        
+      
+    
+    </summary>
+    
+      <category term="Typora" scheme="https://yl-precious.github.io/categories/Typora/"/>
+    
+    
+      <category term="Typora" scheme="https://yl-precious.github.io/tags/Typora/"/>
+    
+      <category term="Markdown" scheme="https://yl-precious.github.io/tags/Markdown/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
