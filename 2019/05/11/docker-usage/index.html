@@ -4,8 +4,14 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="typora_vue, CV ML AI">
-    <meta name="description" content="TyporaTypora是一款支持实时预览的 Markdown 编辑器和阅读器，支持Windows、macOS、Linux三大平台。Typora 作为一款合格的 Markdown 编辑器，支持图片、列表、表格、代码、公式、目录等功能，同时这">
+    <meta name="keywords" content="docker Usage, CV ML AI">
+    <meta name="description" content="docker Usagedocker 安装Nvidia-docker安装
+docker 注册
+注册docker账户: https://www.docker.com/
+
+create repository 
+
+You may push a n">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +19,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>typora_vue | yl-precious</title>
+    <title>docker Usage | yl-precious</title>
     <link rel="icon" type="image/jpeg" href="/favicon.jpg">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -257,13 +263,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/images/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        typora_vue
+                        docker Usage
                     </div>
                 </div>
             </div>
@@ -374,12 +380,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Typora/" target="_blank">
-                                <span class="chip bg-color">Typora</span>
-                            </a>
-                        
-                            <a href="/tags/Markdown/" target="_blank">
-                                <span class="chip bg-color">Markdown</span>
+                            <a href="/tags/docker/" target="_blank">
+                                <span class="chip bg-color">docker</span>
                             </a>
                         
                     </div>
@@ -390,8 +392,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Typora/" class="post-category" target="_blank">
-                                Typora
+                            <a href="/categories/docker/" class="post-category" target="_blank">
+                                docker
                             </a>
                         
                     </div>
@@ -409,7 +411,7 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        246
+                        254
                     </div>
                     
 
@@ -432,26 +434,65 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="Typora"><a href="#Typora" class="headerlink" title="Typora"></a>Typora</h2><p>Typora是一款支持实时预览的 Markdown 编辑器和阅读器，支持Windows、macOS、Linux三大平台。Typora 作为一款合格的 Markdown 编辑器，支持图片、列表、表格、代码、公式、目录等功能，同时这款软件还支持（一键）动态预览功能，让一切都变得如此干净、纯粹。并且有多种主题模板。</p>
-<h3 id="Ubuntu-18-04-Typora-安装"><a href="#Ubuntu-18-04-Typora-安装" class="headerlink" title="Ubuntu 18.04 Typora 安装"></a>Ubuntu 18.04 Typora 安装</h3><pre class=" language-bash"><code class="language-bash">$ <span class="token function">wget</span> -qO - https://typora.io/linux/public-key.asc <span class="token operator">|</span> <span class="token function">sudo</span> apt-key add -
-
-<span class="token comment" spellcheck="true"># add Typora's repository</span>
-<span class="token function">sudo</span> add-apt-repository <span class="token string">'deb https://typora.io/linux ./'</span>
-
-<span class="token comment" spellcheck="true"># install typora</span>
-<span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> typora
+                <h2 id="docker-Usage"><a href="#docker-Usage" class="headerlink" title="docker Usage"></a>docker Usage</h2><h3 id="docker-安装"><a href="#docker-安装" class="headerlink" title="docker 安装"></a>docker 安装</h3><p><a href="https://github.com/NVIDIA/nvidia-docker" target="_blank" rel="noopener">Nvidia-docker安装</a></p>
+<h3 id="docker-注册"><a href="#docker-注册" class="headerlink" title="docker 注册"></a>docker 注册</h3><ol>
+<li><p>注册docker账户: <a href="https://www.docker.com/" target="_blank" rel="noopener">https://www.docker.com/</a></p>
+</li>
+<li><p>create repository </p>
+</li>
+<li><p>You may push a new image to this repository using the CLI:<br><code>`</code>bash<br>docker tag local-image:tagname new-repo:tagname</p>
+</li>
+</ol>
+<p>docker push new-repo:tagname</p>
+<p>Make sure to change tagname with your desired image repository tag.</p>
+<pre><code>
+### docker 使用
+1. 查看需要上传的镜像
+```bash
+docker images
+</code></pre><ol start="2">
+<li><p>登录到docker hub</p>
+<pre class=" language-bash"><code class="language-bash">docker login
 </code></pre>
-<h3 id="Change-Typora-theme-to-Vue"><a href="#Change-Typora-theme-to-Vue" class="headerlink" title="Change Typora theme to Vue"></a>Change Typora theme to Vue</h3><ol>
-<li>下载<a href="https://github.com/blinkfox/typora-vue-theme" target="_blank" rel="noopener">typora-vue-theme</a>中的vue.css、vue-dark.css文件和包含字体的vue文件夹；</li>
+</li>
+<li><p>tag修改镜像名称</p>
+<pre class=" language-bash"><code class="language-bash">docker tag hello-world new-repo:tagname
+</code></pre>
+</li>
+<li><p>推送镜像</p>
+<pre class=" language-bash"><code class="language-bash">docker push new-repo:tagname
+</code></pre>
+</li>
+<li><p>搜索已发布的镜像：</p>
+<pre class=" language-bash"><code class="language-bash">docker search new-repo:tagname
+</code></pre>
+</li>
+<li><p>拉取使用镜像</p>
+<pre class=" language-bash"><code class="language-bash">docker pull new-repo:tagname
+</code></pre>
+</li>
 </ol>
-<ol start="2">
-<li>打开 Typora，点击“偏好设置” =&gt; “打开主题文件夹”按钮，将弹出 Typora 的主题文件夹；</li>
+<h3 id="基于Dockerfile创建镜像"><a href="#基于Dockerfile创建镜像" class="headerlink" title="基于Dockerfile创建镜像"></a>基于Dockerfile创建镜像</h3><ol>
+<li><p>导出程序依赖包，将生成的 requirements.txt 复制到docker_test里</p>
+<pre class=" language-bash"><code class="language-bash">pip freeze <span class="token operator">></span> requirements.txt
+</code></pre>
+</li>
+<li><p>编写Dockfile， 在docker_test同目录下创建Dockfile文件，格式如下：<br><code>`</code><br>FROM python:3.6</p>
+</li>
 </ol>
-<ol start="3">
-<li>将下载好的vue.css和vue-dark.css文件和包含字体的vue文件夹放到 Typora 的主题文件夹中；</li>
-</ol>
-<ol start="4">
-<li>关闭并重新打开 Typora，从菜单栏中选择 “主题” =&gt; “Vue” 或者 “Vue Dark” 即可。</li>
+<p>MAINTAINER name  (email)      # 维护者信息</p>
+<p>ADD ./docker_test /code        # 代码添加到code文件夹</p>
+<p>WORKDIR /code        # 设置code文件夹是工作目录</p>
+<p>RUN pip install -r requirements.txt        # 安装支持</p>
+<pre><code>
+3. 制作镜像
+```bash
+docker build -t imagename Dockerfilepath 
+# Dockerfilepath：Dockerfile 所在文件夹名称，当前名录为 “.” 
+</code></pre><ol start="4">
+<li>运行镜像<pre class=" language-bash"><code class="language-bash">docker run -d  imagename
+</code></pre>
+</li>
 </ol>
 
             </div>
@@ -600,7 +641,7 @@
                     </span>
                     <a href="https://yl-precious.github.io" class="b-link-green">yl-precious</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/05/11/typora-vue/" class="b-link-green">typora_vue</a>
+                    <a href="/2019/05/11/docker-usage/" class="b-link-green">docker Usage</a>
                 </p>
             </div>
         </div>
@@ -623,7 +664,60 @@
         
         <div class="article col s12 m6 overflow-policy" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2019/05/11/docker-usage/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="docker Usage">
+                        
+                        <span class="card-title">docker Usage</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">docker Usagedocker 安装Nvidia-docker安装
+docker 注册
+注册docker账户: https://www.docker.com/
+
+create repository 
+
+You may push a n</div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-05-11
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/docker/" class="post-category" target="_blank">
+                                    docker
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/docker/" target="_blank">
+                        <span class="chip bg-color">docker</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6 overflow-policy" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2019/05/11/github-usage/">
                     <div class="card-image">
@@ -651,9 +745,9 @@ git add .
 关联github仓库
 </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-05-11
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-05-11
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -673,39 +767,6 @@ git add .
                         <span class="chip bg-color">github</span>
                     </a>
                     
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6 overflow-policy" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2019/04/30/hello-world/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                        
-                        <span class="card-title">Hello World</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex</div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-04-30
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-user fa-fw"></i>
-                            yl-precious
-                            
-                        </span>
-                    </div>
                 </div>
                 
             </div>
