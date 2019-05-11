@@ -409,7 +409,7 @@ Create repository ">
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        307
+                        305
                     </div>
                     
 
@@ -475,20 +475,21 @@ docker images
 <pre class=" language-bash"><code class="language-bash">pip freeze <span class="token operator">></span> requirements.txt
 </code></pre>
 </li>
-<li><p>编写Dockfile， 在docker_test同目录下创建Dockfile文件，格式如下：<br><code>`</code> bash<br>FROM python:3.6</p>
+<li><p>编写Dockfile， 在docker_test同目录下创建Dockfile文件，格式如下：</p>
+<pre class=" language-bash"><code class="language-bash">FROM python:3.6
+MAINTAINER name  <span class="token punctuation">(</span>email<span class="token punctuation">)</span>      <span class="token comment" spellcheck="true"># 维护者信息</span>
+ADD ./docker_test /code        <span class="token comment" spellcheck="true"># 代码添加到code文件夹</span>
+WORKDIR /code        <span class="token comment" spellcheck="true"># 设置code文件夹是工作目录</span>
+RUN pip <span class="token function">install</span> -r requirements.txt        <span class="token comment" spellcheck="true"># 安装支持</span>
+</code></pre>
 </li>
-</ol>
-<p>MAINTAINER name  (email)      # 维护者信息</p>
-<p>ADD ./docker_test /code        # 代码添加到code文件夹</p>
-<p>WORKDIR /code        # 设置code文件夹是工作目录</p>
-<p>RUN pip install -r requirements.txt        # 安装支持</p>
-<pre><code>
-3. 制作镜像
-``` bash
-docker build -t imagename Dockerfilepath 
-# Dockerfilepath：Dockerfile 所在文件夹名称，当前名录为 “.” 
-</code></pre><ol start="4">
-<li>运行镜像<pre class=" language-bash"><code class="language-bash">docker run -d  imagename
+<li><p>制作镜像</p>
+<pre class=" language-bash"><code class="language-bash">docker build -t imagename Dockerfilepath 
+<span class="token comment" spellcheck="true"># Dockerfilepath：Dockerfile 所在文件夹名称，当前名录为 “.” </span>
+</code></pre>
+</li>
+<li><p>运行镜像</p>
+<pre class=" language-bash"><code class="language-bash">docker run -d  imagename
 </code></pre>
 </li>
 </ol>
@@ -885,7 +886,7 @@ git add .
 
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-                <span class="white-color">716</span>
+                <span class="white-color">714</span>
             
 
             
